@@ -43,24 +43,6 @@ paper. The anchor box sizes are [128, 256, 512] and the ratios are [1:1, 1:2, 2:
 - The tensorflow backend performs a resize on the pooling region, instead of max pooling. This is much more efficient and has little impact on results.
 
 
-## Example output:
-
-![ex1](http://i.imgur.com/7Lmb2RC.png)
-![ex2](http://i.imgur.com/h58kCIV.png)
-![ex3](http://i.imgur.com/EbvGBaG.png)
-![ex4](http://i.imgur.com/i5UAgLb.png)
-
-## ISSUES:
-
-- If you get this error:
-`ValueError: There is a negative shape in the graph!`    
-    than update keras to the newest version
-
-- Make sure to use `python2`, not `python3`. If you get this error:
-`TypeError: unorderable types: dict() < dict()` you are using python3
-
-- If you run out of memory, try reducing the number of ROIs that are processed simultaneously. Try passing a lower `-n` to `train_frcnn.py`. Alternatively, try reducing the image size from the default value of 600 (this setting is found in `config.py`.
-
 ## Reference
 [1] [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks, 2015](https://arxiv.org/pdf/1506.01497.pdf) <br/>
 [2] [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning, 2016](https://arxiv.org/pdf/1602.07261.pdf) <br/>
