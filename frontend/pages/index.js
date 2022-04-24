@@ -12,7 +12,7 @@ export default function Home( {cardsData }) {
       </Head>
       <Header />
       <Banner />
-      <main className="max-w-7xl mx-auto px-8 sm:px-16">
+      {/* <main className="max-w-7xl mx-auto px-8 sm:px-16">
         
         <section>
           <h2 className="text-4xl font-semibold py-8">Previous Runs</h2>
@@ -22,7 +22,7 @@ export default function Home( {cardsData }) {
             ))}
           </div>
         </section>
-      </main>
+      </main> */}
     </div>
   );
 }
