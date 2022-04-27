@@ -7,7 +7,7 @@ export default function Home( {cardsData }) {
   return (
     <div className="">
       <Head>
-        <title>Object Deteciton FPGA</title>
+        <title>Object Detection FPGA</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
